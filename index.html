@@ -130,14 +130,14 @@
 </head>
 <body class="bg-gray-50">
  <!-- HEADER INTÉGRÉ DIRECTEMENT DANS LA PAGE -->
-<header class="fixed w-full z-50">
+<header class="fixed w-full z-50" >
     <nav class="bg-white shadow-md">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <div class="w-12 h-12  rounded-lg flex items-center justify-center">
-                     <img src="ifptlogo-removebg-preview.png" alt="">
+                     <img src="ifptlogo-removebg-preview.png" alt="" style="scale: 1.5;">
                     </div>
                 </div>
 
@@ -146,10 +146,10 @@
                     <a href="index.html" class="text-blue-700 font-medium">Accueil</a>
                     <a href="cours.html" class="text-gray-700 hover:text-blue-700 font-medium">Cours</a>
                     <a href="admission.html" class="text-gray-700 hover:text-blue-700 font-medium">Admission</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium">Actualités</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium">Blog</a>
                     <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
-                    
-                    <!-- Boutons d'authentification (visible quand l'utilisateur n'est PAS connecté) -->
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">About</a>
+                  <!-- Boutons d'authentification (visible quand l'utilisateur n'est PAS connecté) -->
                     <div id="auth-buttons-desktop" class="flex items-center space-x-4">
                         <a href="connexion.html" class="text-blue-600 hover:text-blue-800 font-medium">
                             Connexion
@@ -196,7 +196,8 @@
                 <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Actualité</a>
                 <a href="admission.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Admissions</a>
                 <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Contact</a>
-                
+                <a href="apropos.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">About</a>
+
                 <!-- Boutons d'authentification mobile -->
                 <div id="auth-buttons-mobile" class="pt-4 border-t border-gray-200">
                     <a href="connexion.html" class="block text-center text-blue-600 hover:text-blue-800 font-medium py-2">
@@ -240,19 +241,26 @@
             <!-- Contenu Hero -->
             <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
                 <div class="section-hidden" id="hero-content">
-                    <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <h1 id="hero-title" class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                         Institut de Formation et d'Éducation Professionnelle et Technologique
                     </h1>
                     <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-blue-100">
                         Former les talents de demain avec des programmes innovants et adaptés au marché
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button id="cta-courses" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-                            <i class="fas fa-book-open mr-2"></i> Voir les cours
-                        </button>
+                       <a href="cours.html">
+                <button 
+                        class="bg-blue-600 hover:bg-green-700 text-white font-semibold
+                               py-3 px-8 rounded-xl text-lg transition
+                               transform hover:scale-105 hover:shadow-xl">
+                    <i class="fas fa-book-open mr-2"></i> Nos programmes
+                </button>
+                </a>
+                    <a href="inscription.html">
                         <button id="cta-register" class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">
                             <i class="fas fa-user-plus mr-2"></i> S'inscrire
                         </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -372,12 +380,16 @@
                     Rejoignez notre communauté d'apprenants et bénéficiez d'un accompagnement personnalisé tout au long de votre parcours.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="inscription.html">
                     <button class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-                        <i class="fas fa-calendar-check mr-2"></i> Demander un rendez-vous
+                        <i class="fas fa-calendar-check mr-2"></i> S'inscrire
                     </button>
+                    </a>
+                     <a href="contact.html">
                     <button class="bg-transparent border-2 border-white hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105">
                         <i class="fas fa-phone-alt mr-2"></i> Nous contacter
                     </button>
+                    </a>
                 </div>
             </div>
         </section>

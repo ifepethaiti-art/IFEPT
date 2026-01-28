@@ -84,15 +84,15 @@
 </head>
 <body class="bg-gray-50 min-h-screen">
     <!-- Header -->
-    <header class="fixed w-full z-50 bg-white shadow-md">
-        <nav class="max-w-6xl mx-auto px-4">
+   <header class="fixed w-full z-50" >
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-lg flex items-center justify-center">
-                        <img src="ifptlogo-removebg-preview.png" alt="IFPT Logo" class="h-10">
+                    <div class="w-12 h-12  rounded-lg flex items-center justify-center">
+                     <img src="ifptlogo-removebg-preview.png" alt="" style="scale: 1.5;">
                     </div>
-                    <span class="font-bold text-xl text-blue-700">IFPT</span>
                 </div>
 
                 <!-- Navigation Desktop -->
@@ -100,10 +100,10 @@
                     <a href="index.html" class="text-blue-700 font-medium">Accueil</a>
                     <a href="cours.html" class="text-gray-700 hover:text-blue-700 font-medium">Cours</a>
                     <a href="admission.html" class="text-gray-700 hover:text-blue-700 font-medium">Admission</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium">Actualités</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium">Blog</a>
                     <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
-                    
-                    <!-- Boutons d'authentification (visible quand l'utilisateur n'est PAS connecté) -->
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">About</a>
+                  <!-- Boutons d'authentification (visible quand l'utilisateur n'est PAS connecté) -->
                     <div id="auth-buttons-desktop" class="flex items-center space-x-4">
                         <a href="connexion.html" class="text-blue-600 hover:text-blue-800 font-medium">
                             Connexion
@@ -123,7 +123,7 @@
                             </button>
                             
                             <!-- Dropdown menu utilisateur -->
-                            <div id="user-dropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden z-50">
+                            <div id="user-dropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden">
                                 <a href="profil.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                                     <i class="fas fa-user-circle mr-2"></i> Mon profil
                                 </a>
@@ -140,7 +140,7 @@
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-        </nav>
+        </div>
         
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="md:hidden bg-white shadow-lg px-4 py-3 hidden">
@@ -150,7 +150,8 @@
                 <a href="blog.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Actualité</a>
                 <a href="admission.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Admissions</a>
                 <a href="contact.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">Contact</a>
-                
+                <a href="apropos.html" class="text-gray-700 hover:text-blue-700 font-medium py-2">About</a>
+
                 <!-- Boutons d'authentification mobile -->
                 <div id="auth-buttons-mobile" class="pt-4 border-t border-gray-200">
                     <a href="connexion.html" class="block text-center text-blue-600 hover:text-blue-800 font-medium py-2">
@@ -178,8 +179,8 @@
                 </div>
             </div>
         </div>
-    </header>
-
+    </nav>
+</header>
     <div class="h-16"></div> <!-- Espace pour le header fixe -->
 
     <main class="container mx-auto px-4 py-8">
